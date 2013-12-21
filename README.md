@@ -22,4 +22,4 @@ $ docker run -t -i -rm jroll/docker-trusty-pypy /usr/bin/pypy
 
 In your Dockerfile, just use `FROM jroll/docker-trusty-pypy`. Then you
 will have both `pypy` and `pip` available. Both binaries are located in
-`/usr/local/bin`.
+`/usr/bin`.
