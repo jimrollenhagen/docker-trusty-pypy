@@ -17,4 +17,12 @@ MAINTAINER jim.rollenhagen@rackspace.com
 
 RUN apt-get update
 RUN apt-get install -y pypy
-RUN apt-get install -y python-pip
+RUN apt-get install -y curl
+
+# get pip running
+RUN curl --silent -O http://python-distribute.org/distribute_setup.py
+RUN pypy distribute_setup.py
+RUN rm distribute_setup.py
+RUN curl --silent -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+RUN pypy get-pip.py
+RUN rm get-pip.py
