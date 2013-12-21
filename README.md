@@ -15,7 +15,7 @@ $ docker pull jroll/docker-trusty-pypy
 $ docker run jroll/docker-trusty-pypy /usr/bin/pypy -c "print 'hello world!'"
 
 # get a pypy shell
-$ docker run -t -i -rm jroll/docker-trusty-pypy /usr/bin/pypy -c "print 'hello world!'"
+$ docker run -t -i -rm jroll/docker-trusty-pypy /usr/bin/pypy
 ```
 
 ### Using this Dockerfile as a base
